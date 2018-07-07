@@ -11,7 +11,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!--继承此模板的页面，如果没有定制 title 区域的话，就会自动使用第二个参数 LaraBBS 作为标题前缀。 -->
-    <title>@yield('title', 'LaraBBS')</title>
+    <title>@yield('title', 'LaraBBS') - {{ setting('site_name', 'Laravel 进阶教程') }}</title>
     <meta name="description" content="@yield('description', 'LaraBBS 爱好者社区')" />
 
     <!-- Styles -->
